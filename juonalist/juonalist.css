@@ -1,31 +1,98 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: auto;
-    min-width: auto;
-    justify-content: center;
+
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: #f5f5f5;
+  color: #1f2937;
+  line-height: 1.6;
 }
-header{
-    min-height: 20vh;
-    min-width: auto;
+.header {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-text {
+  align-items: center;
+  gap: 1rem;
+}
+.header-logo {
     display: flex;
-    background-color: blue;
+  align-items: center;
+  gap: 1rem;
 }
-.div_logo{
-    flex: 80%;
-    background-color: red;
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.div_nav{
-    flex: 80%;
-    background-color: black;
-    
+
+.school-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
 }
-.h1_logo{
-    color: white;
-    font-size: 30px;
+
+.school_logo_par{
+  font-size: 0.875rem;
+  opacity: 0.9;
+  margin: 0;
 }
-span{
-    font-size: 20px;
+
+.header_buttons{
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header-btn.primary {
+  background: white;
+  color: #2563eb;
+  border-color: white;
+}
+
+.header-btn.primary:hover {
+  background: #f3f4f6;
 }
