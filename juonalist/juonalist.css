@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: auto;
+    min-width: auto;
+    justify-content: center;
+}
+header{
+    min-height: 20vh;
+    min-width: auto;
+    display: flex;
+    background-color: blue;
+}
+.div_logo{
+    flex: 80%;
+    background-color: red;
+}
+.div_nav{
+    flex: 80%;
+    background-color: black;
+    
+}
+.h1_logo{
+    color: white;
+    font-size: 30px;
+}
+span{
+    font-size: 20px;
+}
