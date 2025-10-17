@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+.logo-icon{
+    margin-left: 150px;
+}
+.school-tagline{
+    margin-left: 100px;
+}
+  .header_buttons{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
