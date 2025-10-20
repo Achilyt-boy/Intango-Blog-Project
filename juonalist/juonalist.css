@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: #dddada;
+  color: #1f2937;
+  line-height: 1.6;
+}
+.header {
+  background: linear-gradient(135deg, #2750a8 0%, #1f9929 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-text {
+  align-items: center;
+  gap: 1rem;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+     gap: 1rem;
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.gradution{
+  font-size: 34px;
+  color: white;
+  padding: 5px;
+}
+.school-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.school_logo_par{
+  font-size: 0.875rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.header_buttons{
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header-btn.primary {
+  background: white;
+  color: #2563eb;
+  border-color: white;
+}
+
+.header-btn.primary:hover {
+  background: #f3f4f6;
+}
+section{
+  min-height: 110vh;
+  min-width: auto;
+  
+  margin: 30px;
+  border-radius:20px ;
+}
+.card_container_section{
+  min-height: 40vh;
+  min-width: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 1px black;
+}
+.dashboard_title_container{
+  min-height: 13vh;
+  min-width: auto;
+
+  margin: 30px;
+  display: flex; 
+}
+.dashboard_tittle{
+  margin-left: 20px;
+}
+.dashboard_tittle_article{
+  width: 55px;
+  height: 60px;
+   background: linear-gradient(135deg, #25eb71 0%, #1d4ed8 100%);
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard_article_pen{
+  font-size: 40px;
+  color: white;
+  padding:  4px;
+}
+.container_cards{
+   min-height: 17vh;
+  min-width: auto;
+  margin: 20px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.card_one{
+  width: 30%;
+  height: 100px;
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+.card_two{
+  width: 30%;
+  height: 100px;
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+.card_three{
+  width: 30%;
+  height: 100px;
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+.navigation_btn_tabs{
+  min-width: auto;
+  min-height: 10vh;
+  margin-top: 20px;
+}
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  color: #6b7280;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tab-btn:hover {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.tab-btn.active {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+.Dashboard_container{
+  min-width: auto;
+  min-height: 80vh;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+/* Footer */
+footer{
+  display: flex;
+  background-color: rgb(12, 12, 65);
+  
+  min-width: auto;
+  min-height: 40vh;
+  margin-top: 100px;
+}
+.intango_footer h4{
+  margin-left: 39rem;
+  font-weight: bold;
+  color: #f3f4f6;
+}
+.intango_footer{
+  margin-top: 50px;
+}
+.intango_footer p{
+  margin-left: 30rem;
+  font-size: 20px;
+  color: gray;
+}
+.I-span{
+  background-color: blue;
+ padding: 1rem 2rem;
+  border-radius: 100%;
+  margin-right: 20px;
+  font-size: 30PX;
+}
+.footer_par{
+  margin-left: 120px;
+}
+h6{
+  margin-left: 550px;
+  color: rgb(93, 92, 94);
+  font-size: large;
+  margin-top: 20px;
+}
