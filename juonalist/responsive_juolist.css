@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+<<<<<<< HEAD
   .container_cards{
     flex-direction: column;
     gap: 50px;
@@ -31,4 +32,6 @@
    margin-right: -500px;
   }
  
+=======
+>>>>>>> d0544aa0907a546a78ace4ffb8f2e093abc14a18
 }

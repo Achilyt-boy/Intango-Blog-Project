@@ -12,7 +12,11 @@ body {
   line-height: 1.6;
 }
 .header {
+<<<<<<< HEAD
   background: linear-gradient(135deg, #2750a8 0%, #1f9929 100%);
+=======
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+>>>>>>> d0544aa0907a546a78ace4ffb8f2e093abc14a18
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -142,7 +146,10 @@ section{
   min-width: auto;
   margin: 20px;
   display: flex;
+<<<<<<< HEAD
   /* flex-wrap: wrap; */
+=======
+>>>>>>> d0544aa0907a546a78ace4ffb8f2e093abc14a18
 }
 .card_one{
   width: 30%;
@@ -214,6 +221,7 @@ section{
   margin-top: 20px;
   border-radius: 20px;
 }
+<<<<<<< HEAD
 /* .container { */
   /* display: flex;
   justify-content: center;
@@ -332,3 +340,12 @@ select {
     font-size: 14px;
     color: #aaa;
   }
+=======
+/* footer */
+footer{
+  min-width: auto;
+  min-height: 30vh;
+  background-color: #29ff5e;
+  margin-top: 100px;
+}
+>>>>>>> d0544aa0907a546a78ace4ffb8f2e093abc14a18
