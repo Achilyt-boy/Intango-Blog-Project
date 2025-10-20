@@ -78,14 +78,46 @@
         </button>
       </div>
     </div>
-    <div class="Dashboard_container"></div>
+    <div class="tab-content" id="my-articles">
+      <div class="my-articles-list">
+        <h2>📰 My Submitted Articles</h2>
+        <p>No articles submitted yet.</p>
+      </div>
+    </div>
+    <div class="Dashboard_container">
+        <form class="article-form">
+          <h2>📝 Submit New Article</h2>
+          <p class="subtitle">Write and submit your article for admin review</p>
+    
+          <label for="title">Article Title *</label>
+          <input type="text" id="title" placeholder="Enter an engaging article title" required />
+    
+          <label for="content">Article Content *</label>
+          <textarea id="content" rows="8" placeholder="Write your article content here... Share the story, details, and important information." required></textarea>
+    
+          <label for="category">Category *</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option>School News</option>
+            <option>Events</option>
+            <option>Achievements</option>
+            <option>Announcements</option>
+          </select>
+    
+          <div class="notice">
+            ℹ️ Your article will be submitted for admin review. Once approved, it will be published on the school news page.
+          </div>
+    
+          <button type="submit" class="submit-btn">Submit for Review</button>
+      </div>
   </section>
-  <footer> 
-     <div class="intango_footer"> <br>
-       <h4> <span class="I-span">i</span> Intango Technical Secondary School</h4> <br>
-       <p>Dedicated to providing excellence in education and fostering a <br><span class="footer_par">community of longlife learners .</span></p>
-       <h6>©2024-2025 Intango TSS.ALL rights reserved.</h6>
-     </div>
-  </footer>
+ <footer>
+  <div class="footer-content">
+    <h3><span class="I-span">i</span>  Intango TSS</h3> 
+    <p>Dedicated to providing excellence in education and fostering a <br>community of lifelong learners.</p>
+    <p class="copy">© 2024 Intango  School. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
