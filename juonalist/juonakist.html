@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Intango_Blog_School</title>
-    <link rel="stylesheet" href="juonalist.css">
-    <link rel="stylesheet" href="responsive_juolist.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Intango_Blog_School</title>
+  <link rel="stylesheet" href="juonalist.css">
+  <link rel="stylesheet" href="responsive_juolist.css">
 </head>
+
 <body>
-    <!-- Header  -->
+  <!-- Header  -->
   <header class="header">
     <div class="header-container">
       <div class="header_logo">
         <div class="logo-icon">
-         <span class="gradution"> <i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="gradution"> <i class="fa-solid fa-graduation-cap"></i></span>
         </div>
         <div class="header-text">
-          <h1 class="school-name">Intango Technical secondary School</h1> 
+          <h1 class="school-name">Intango Technical secondary School</h1>
           <p class="school-tagline">Skills Authenticity Service</p>
         </div>
       </div>
       <div class="header_buttons">
         <button class="header-btn">
-        <i class="fa-solid fa-book-open"></i>  News & Updates
+          <i class="fa-solid fa-book-open"></i> News & Updates
         </button>
         <button class="header-btn primary">
 
-         <i class="fa-solid fa-pen"></i> Journalist Dashboard
+          <i class="fa-solid fa-pen"></i> Journalist Dashboard
         </button>
         <button class="header-btn">
           <i class="fa-solid fa-door-open"></i> Logout
@@ -43,28 +47,35 @@
         </div>
         <div class="dashboard_tittle">
           <h2 class="title_dashboard">Journalist DashBoard</h2>
-        <p class="subtitle_dashboard">Welcomeback! Journalist</p>
-      </div>
+          <p class="subtitle_dashboard">Welcomeback! Journalist</p>
+        </div>
       </div>
       <div class="container_cards">
-        <div class="card_one">
-          <div class="logo-icon">
-         <span class="gradution"> <i class="fa-solid fa-graduation-cap"></i></span>
+        <div class="stat-card yellow">
+          <div class="stat-icon">
+          </div>
+          <div class="stat-content">
+            <p class="stat-label">Pending Review</p>
+            <p class="stat-value">0</p>
+          </div>
         </div>
-        <div class="tittle_article"><p>Pending Review<span>0</span></p></div>
+
+        <div class="stat-card green">
+          <div class="stat-icon">
+          </div>
+          <div class="stat-content">
+            <p class="stat-label">Published</p>
+            <p class="stat-value">0</p>
+          </div>
         </div>
-        <div class="card_two">
-          <div class="logo-icon">
-         <span class="gradution"> <i class="fa-solid fa-graduation-cap"></i></span>
-         
-        </div>
-         <div class="tittle_article"><p>Pending Review<span>0</span></p></div>
-        </div>
-        <div class="card_three">
-          <div class="logo-icon">
-         <span class="gradution"> <i class="fa-solid fa-graduation-cap"></i></span>
-        </div>
-         <div class="tittle_article"><p>Pending Review<span>0</span></p></div>
+
+        <div class="stat-card blue">
+          <div class="stat-icon">
+          </div>
+          <div class="stat-content">
+            <p class="stat-label">Total Articles</p>
+            <p class="stat-value">0</p>
+          </div>
         </div>
       </div>
     </div>
@@ -78,52 +89,79 @@
         </button>
       </div>
     </div>
-    <div class="tab-content" id="my-articles">
-      <div class="my-articles-list">
-        <h2>📰 My Submitted Articles</h2>
-        <p>No articles submitted yet.</p>
+    <div class="tab-content active" id="submit-tab">
+        <div class="form-card">
+          <div class="form-header">
+            <div>
+              <h3 class="form-title">Submit New Article</h3>
+              <p class="form-subtitle">Write and submit your article for admin review</p>
+            </div>
+          </div>
+
+          <form id="article-form">
+            <div class="form-group">
+              <label for="article-title">Article Title <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="article-title" name="title" placeholder="Enter an engaging article title" required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="article-content">Article Content <span class="required">*</span></label>
+              <textarea 
+                id="article-content" 
+                name="content" 
+                rows="10"
+                placeholder="Write your article content here... Share the story, details, and important information."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="category">Category <span class="required">*</span></label>
+              <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="news">News</option>
+                <option value="sports">Sports</option>
+                <option value="events">Events</option>
+                <option value="academics">Academics</option>
+                <option value="student-life">Student Life</option>
+                <option value="opinion">Opinion</option>
+              </select>
+            </div>
+
+            <div class="info-box">
+              <p>Your article will be submitted for admin review. Once approved, it will be published on the school news page.</p>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Submit for Review
+            </button>
+          </form>
+        </div>
+      </div>
+
+       <!-- My Articles Tab  -->
+      <div class="tab-content" id="my-articles-tab">
+        <div class="form-card">
+          <div class="empty-state">
+            <h3>No Articles Yet</h3>
+            <p>You haven't submitted any articles yet. Click "Submit Article" to get started!</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="Dashboard_container">
-        <form class="article-form">
-          <h2>📝 Submit New Article</h2>
-          <p class="subtitle">Write and submit your article for admin review</p>
-    
-          <label for="title">Article Title *</label>
-          <input type="text" id="title" placeholder="Enter an engaging article title" required />
-    
-          <label for="content">Article Content *</label>
-          <textarea id="content" rows="8" placeholder="Write your article content here... Share the story, details, and important information." required></textarea>
-    
-          <label for="category">Category *</label>
-          <select id="category" required>
-            <option value="">Select a category</option>
-            <option>School News</option>
-            <option>Events</option>
-            <option>Achievements</option>
-            <option>Announcements</option>
-          </select>
-    
-          <div class="notice">
-            ℹ️ Your article will be submitted for admin review. Once approved, it will be published on the school news page.
-          </div>
-    
-          <button type="submit" class="submit-btn">Submit for Review</button>
-      </div>
-  </section>
- <footer>
-  <div class="footer-content">
-    <h3><span class="I-span">i</span>  Intango TSS</h3> 
-    <p>Dedicated to providing excellence in education and fostering a <br>community of lifelong learners.</p>
-    <p class="copy">© 2024 Intango  School. All rights reserved.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
-    <div class="Dashboard_container"></div>
   </section>
   <footer>
-
+    <div class="footer-content">
+      <h3><span class="I-span">i</span> Intango TSS</h3>
+      <p>Dedicated to providing excellence in education and fostering a <br>community of lifelong learners.</p>
+      <p class="copy">© 2024 Intango School. All rights reserved.</p>
+    </div>
   </footer>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
